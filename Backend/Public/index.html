@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Savory Bites Restaurant</title>
+
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="/js/logica.js">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.0/font/bootstrap-icons.css" rel="stylesheet">
+
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light sticky-top">
+        <div class="container">
+            <a class="navbar-brand fw-bold fs-3" href="#">
+                <img src="/img/logo-blu.jpg" alt="bluver-payment" style="width: 14%;">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="#home">INICIO</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#menu">CALIDAD</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#reservation">RECARGAS</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#reviews">PAGOS</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#gallery">ACERCA</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <section id="home" class="hero-section">
+        <div class="container text-center">
+            <h1 class="display-3 fw-bold mb-4">VIVE LA EXPERIENCIA BlUVER</h1>
+            <p class="lead mb-5">Agua limpia y segura, siempre cerca de ti.</p>
+        </div>
+    </section>
+
+    <section id="menu" class="py-5">
+        <div class="container">
+            <h2 class="text-center section-title">CALIDAD DEL AGUA</h2>
+            <p class="text-center text-muted mb-5">Revisamos cada detalle del agua para que tú solo te preocupes por disfrutarla.</p>
+            
+            <div class="row section-information">
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <div class="card menu-card">
+                        <img src="/img/indicadores.jpeg" class="card-img-top menu-img" alt="indicadores">
+                        <div class="card-body">
+                            <h5 class="card-title">TARJETAS DE INDICADORES</h5>
+                            <p class="card-text text-muted">PH- 7.2</p>
+                            <p class="card-text text-muted">Cloro - 0.5</p>
+                            <p class="card-text text-muted">Turbidez - 1.2</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <div class="card menu-card">
+                        <img src="/img/Indicadores.png" class="card-img-top menu-img" alt="indicadores">
+                        <div class="card-body">
+                            <h5 class="card-title">Indicadores de PH</h5>
+                            <p class="card-text text-muted">Gráfico lineal de las últimas mediciones</p>
+                        </div>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+    </section>
+
+    <section id="reservation" class="py-5 bg-secondary-light">
+        <div class="container">
+            <h2 class="text-center section-title">PAGOS</h2>
+            <p class="text-center text-muted mb-5">¡REALIZA TU PAGO AQUÍ!</p>
+
+        <div class="bluver-payment">
+            <svg xmlns="http://www.w3.org/2000/svg" style="position: absolute; width: 0; height: 0; clip: rect(0 0 0 0);">
+                <defs>
+                    <symbol id="icon-card" viewBox="0 0 42 30">
+                        <path d="M4.16634 0.5H37.833C39.674 0.5 41.1663 2.14162 41.1663 4.16667V26.1667C41.1663 28.1917 39.674 29.8333 37.833 29.8333H4.16634C2.32539 29.8333 0.833008 28.1917 0.833008 26.1667V4.16667C0.833008 2.14162 2.32539 0.5 4.16634 0.5ZM4.4996 4.16667V26.1667H37.4996V4.16667H4.4996ZM8.16641 18.8333V22.5H11.8331V18.8333H8.16641ZM13.6664 22.5V18.8333H19.1664V22.5H13.6664ZM30.1664 18.8333V22.5H33.8331V18.8333H30.1664ZM24.6664 22.5V18.8333H28.3331V22.5H24.6664ZM13.6664 9.66667H8.16641V15.1667H13.6664V9.66667Z"></path>
+                    </symbol>
+                    <symbol id="icon-paypass" viewBox="0 0 24 24">
+                        <path d="M19 11.9994C19 8.42024 18.146 5.12973 16.7143 2.63942L14.9171 3.53529C16.1877 5.69424 16.994 8.67482 16.994 11.9994C16.994 15.324 16.1877 18.3046 14.9171 20.4635L16.7143 21.3594C18.146 18.8691 19 15.5786 19 11.9994ZM14.988 11.9994C14.988 9.16846 14.253 6.54955 13.011 4.48546L11.2114 5.38252C12.3071 7.13755 12.982 9.44731 12.982 11.9994C12.982 14.5515 12.3071 16.8613 11.2114 18.6163L13.011 19.5134C14.253 17.4493 14.988 14.8304 14.988 11.9994ZM9.36873 6.30103C10.3833 7.92067 10.976 9.88645 10.976 11.9994C10.976 14.1124 10.3833 16.0782 9.36873 17.6978L7.56526 16.7988C8.44596 15.465 8.97006 13.8054 8.97006 11.9994C8.97006 10.1935 8.44596 8.53383 7.56526 7.20002L9.36873 6.30103ZM6.96407 11.9994C6.96407 10.5692 6.54372 9.23194 5.8086 8.07567L4 8.97722C4.60973 9.86792 4.95808 10.9022 4.95808 11.9994C4.95808 13.0967 4.60973 14.1309 4 15.0216L5.8086 15.9232C6.54372 14.7669 6.96407 13.4297 6.96407 11.9994Z"></path>
+                    </symbol>
+                    <symbol id="icon-upi" viewBox="0 0 22 17">
+                        <path d="M1.81818 0H20.1818C21.186 0 22 0.89543 22 2V14C22 15.1046 21.186 16 20.1818 16H10V14H20V7H2V9H0V2C0 0.89543 0.814028 0 1.81818 0ZM20 2V5H2V2H20ZM0 14H4.58579L3.29289 15.2929L4.70711 16.7071L8.41421 13L4.70711 9.29289L3.29289 10.7071L4.58579 12H0V14Z"></path>
+                    </symbol>
+                    <symbol id="icon-wallet" viewBox="0 0 20 20">
+                        <path d="M13.4506 0.402678C14.5126 0.099229 15.6196 0.714213 15.923 1.77628C15.9741 1.95497 16 2.13989 16 2.32573V4H18C19.1046 4 20 4.89543 20 6V18C20 19.1046 19.1046 20 18 20H2C0.89543 20 0 19.1046 0 18H0.0267034C0.00895177 17.8925 0 17.7835 0 17.6743V5.7543C0 4.86134 0.591955 4.07656 1.45056 3.83125L13.4506 0.402678ZM8.14005 18H18V10H16V14.2457C16 15.1387 15.408 15.9234 14.5494 16.1687L8.14005 18ZM18 6V8H16V6H18ZM2 5.75427V17.6742L14 14.2457V2.3257L2 5.75427ZM12 8C12 8.55228 11.5523 9 11 9C10.4477 9 10 8.55228 10 8C10 7.44771 10.4477 7 11 7C11.5523 7 12 7.44771 12 8Z"></path>
+                    </symbol>
+                </defs>
+            </svg>
+
+            <section class="payment">
+                <div class="box">
+
+                    <div class="payment__method payment-method">
+                        <div class="payment-method__list">
+                            <div class="payment-method__item-wrap payment-method__item-wrap--active" data-index="0">
+                                <div class="payment-method__item">
+                                    <svg class="payment-method__icon" width="24" height="24">
+                                        <use xlink:href="#icon-card"></use>
+                                    </svg>
+                                    <div class="payment-method__title">Tarjeta / QR</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="payment__details payment-details">
+                        <form class="payment__form payment-form payment__form--show" action="" data-form-index="0">
+                            <div class="payment-form__group">
+                                <label class="payment-form__label">Nombre del titular de la tarjeta
+                                    <input class="payment-form__input" type="text" required>
+                                </label>
+                            </div>
+                            <div class="payment-form__group-wrap">
+                                <div class="payment-form__group">
+                                    <label class="payment-form__label">Número de tarjeta
+                                        <input class="payment-form__input" type="number" required>
+                                    </label>
+                                </div>
+                                <div class="payment-form__group payment-form__group--small">
+                                    <label class="payment-form__label">Fecha de expiración
+                                        <input class="payment-form__input" type="number" required>
+                                    </label>
+                                </div>
+                                <div class="payment-form__group payment-form__group--small">
+                                    <label class="payment-form__label">CCV
+                                        <input class="payment-form__input" type="number" required>
+                                    </label>
+                                </div>
+                            </div>
+                            <button class="payment-form__btn" type="submit">Pagar S/ 100</button>
+                            <div class="principal-qr">
+                                <img class="qr-img" src="/img/qr.jpg" alt="qr">
+                            </div>
+                        </form>
+
+                    </div>
+                </div>
+            </section>
+        </div>
+
+
+        </div>
+    </section>
+
+    <section id="reviews" class="py-5">
+        <div class="container">
+            <h2 class="text-center section-title">METODOS DE PAGO</h2>
+            <p class="text-center text-muted mb-5">Métodos de pago seguros y fáciles para ti</p>
+            
+            <div class="row">
+                <div class="col-md-4 mb-4">
+                    <div class="review-card">
+                        <div class="d-flex mb-3">
+                            <div class="flex-shrink-0">
+                                <img src="/img/yape.jpeg" alt="Customer" class="rounded-circle">
+                            </div>
+                            <div class="flex-grow-1 ms-3">
+                                <h5 class="mb-0">YAPE</h5>
+                                <div class="star-rating">
+                                    <i class="bi bi-star-fill"></i>
+                                    <i class="bi bi-star-fill"></i>
+                                    <i class="bi bi-star-fill"></i>
+                                    <i class="bi bi-star-fill"></i>
+                                    <i class="bi bi-star-fill"></i>
+                                </div>
+                            </div>
+                        </div>
+                        <p class="mb-0">"Paga rápido desde tu celular, solo con tu número o código QR."</p>
+                    </div>
+                </div>
+                
+                <div class="col-md-4 mb-4">
+                    <div class="review-card">
+                        <div class="d-flex mb-3">
+                            <div class="flex-shrink-0">
+                                <img src="/img/plin.jpeg" alt="Customer" class="rounded-circle">
+                            </div>
+                            <div class="flex-grow-1 ms-3">
+                                <h5 class="mb-0">PLIN</h5>
+                                <div class="star-rating">
+                                    <i class="bi bi-star-fill"></i>
+                                    <i class="bi bi-star-fill"></i>
+                                    <i class="bi bi-star-fill"></i>
+                                    <i class="bi bi-star-fill"></i>
+                                    <i class="bi bi-star-half"></i>
+                                </div>
+                            </div>
+                        </div>
+                        <p class="mb-0">"Envía tu pago en segundos entre bancos, sin comisiones."</p>
+                    </div>
+                </div>
+                
+                <div class="col-md-4 mb-4">
+                    <div class="review-card">
+                        <div class="d-flex mb-3">
+                            <div class="flex-shrink-0">
+                                <img src="/img/visa.png" alt="Customer" class="rounded-circle">
+                            </div>
+                            <div class="flex-grow-1 ms-3">
+                                <h5 class="mb-0">TARJETAS</h5>
+                                <div class="star-rating">
+                                    <i class="bi bi-star-fill"></i>
+                                    <i class="bi bi-star-fill"></i>
+                                    <i class="bi bi-star-fill"></i>
+                                    <i class="bi bi-star-fill"></i>
+                                    <i class="bi bi-star-fill"></i>
+                                </div>
+                            </div>
+                        </div>
+                        <p class="mb-0">"Pago sin contacto, más seguro y cómodo para ti."</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="gallery" class="py-5 bg-secondary-light">
+        <div class="container">
+            <h2 class="text-center section-title">ACERCA DE NOSOTROS</h2>
+            <p class="text-center text-muted mb-5">Somos un equipo comprometido con llevar agua limpia y segura a más familias, usando la tecnología como aliada. Este proyecto nace con la idea de que cualquier vecino pueda entender y confiar en el agua que consume, viendo de forma clara su calidad y simulando cómo sería recargar y usar un dispensador inteligente en su barrio.</p>
+            
+            <div id="foodCarousel" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <div class="row">
+                            <div class="col-md-6 mb-4 mb-md-0">
+                                <img src="/img/persona.jpg" class="d-block w-100 gallery-item" alt="Gourmet Burger">
+                            </div>
+                            <div class="col-md-6">
+                                <img src="/img/persona2.jpeg" class="d-block w-100 gallery-item mb-4" alt="Seafood Platter">
+                            </div>
+                        </div>
+                    </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer py-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4 mb-4 mb-md-0">
+                    <h5 class="fw-bold mb-3">
+                        <img src="/img/logo-blu.jpg" alt="bluver-payment" style="width: 14%;">
+                    </h5>
+                    <p>AGUA AL ALCANDE DE TUS MANOS</p>
+                    <div class="d-flex">
+                        <a href="#" class="text-dark me-3"><i class="bi bi-facebook fs-4"></i></a>
+                        <a href="#" class="text-dark me-3"><i class="bi bi-instagram fs-4"></i></a>
+                        <a href="#" class="text-dark me-3"><i class="bi bi-twitter fs-4"></i></a>
+                    </div>
+                </div>
+                
+                <div class="col-md-4 mb-4 mb-md-0">
+                    <h5 class="fw-bold mb-3">Contact Info</h5>
+                    <ul class="list-unstyled">
+                        <li class="mb-2"><i class="bi bi-geo-alt me-2"></i>Panamericana Norte, Av. Alfredo Mendiola 6377, Los Olivos 15306</li>
+                        <li class="mb-2"><i class="bi bi-telephone me-2"></i>912 295 833</li>
+                        <li class="mb-2"><i class="bi bi-envelope me-2"></i> Bluver@hotmail.com</li>
+                        <li><i class="bi bi-clock me-2"></i> Open Daily: 5pm - 11pm</li>
+                    </ul>
+                </div>
+                
+            </div>
+            
+            <hr class="my-4">
+            
+            <div class="text-center">
+                <p class="mb-0">&copy; 2025 GRUPO 4.</p>
+            </div>
+        </div>
+    </footer>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="app.js"></script>
+</body>
+</html>

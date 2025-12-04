@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- MISMO CSS DEL LOGIN -->
+    <link rel="stylesheet" href="/css/login.css" />
+
+    <!-- ICONOS -->
+    <link
+        rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    />
+    <title>Registro</title>
+</head>
+
+<body>
+<form id="formRegistro">
+
+    <div class="left">
+        <div>
+            <p>¿Ya tienes una cuenta?</p>
+            <a href="/login.html">Inicia sesión aquí</a>
+            <input type="button" value="Login" onclick="window.location.href='/login.html'" />
+        </div>
+    </div>
+
+    <div class="right">
+        <div>
+            <h1>Crear Cuenta</h1>
+
+            <input type="text" id="nombre" placeholder="Nombre completo" required />
+
+            <input type="email" id="correo" placeholder="Correo electrónico" required />
+
+            <input type="password" id="password" placeholder="Contraseña" required />
+
+            <button type="submit">Registrarse</button>
+
+            <p></p>
+            <div>
+                <a href="#"><i class="fa-brands fa-google"></i></a>
+                <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                <a href="#"><i class="fa-brands fa-github"></i></a>
+                <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+            </div>
+        </div>
+    </div>
+</form>
+
+<script>
+document.getElementById("formRegistro").addEventListener("submit", async (e) => {
+    e.preventDefault();
+
+    const nombre = document.getElementById("nombre").value;
+    const correo = document.getElementById("correo").value;
+    const password = document.getElementById("password").value;
+
+    const res = await fetch("/api/registro", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({ nombre, correo, password })
+    });
+
+    const data = await res.json();
+
+    if (res.ok) {
+        alert("Cuenta creada correctamente");
+        window.location.href = "/login.html";
+    } else {
+        alert(data.mensaje);
+    }
+});
+</script>
+
+</body>
+</html>

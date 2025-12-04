@@ -1,0 +1,44 @@
+<head>
+    <link rel="stylesheet" href="/css/login.css">
+    <link
+        rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+        integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+        crossorigin="anonymous"
+        referrerpolicy="no-referrer"
+    />
+</head>
+<form id="Login">
+
+    <div class="left">
+        <div>
+            <p>¡Bienvenido!</p>
+            <a href="">¿No tienes una cuenta? </a>
+            <input type="button" value="Register" onclick="window.location.href='register.html'">
+        </div>
+    </div>
+
+    <div class="right">
+        <div>
+            <h1>Bluver</h1>
+
+            <input type="text" id="username" placeholder="Username" required />
+            <input type="password" id="password" placeholder="Password" required />
+
+            <a href="">¿Olvidó su contraseña?</a>
+
+            <button type="submit">Login</button>
+
+            <p></p>
+            <div>
+                <a href=""><i class="fa-brands fa-google fa-align-center"></i></a>
+                <a href=""><i class="fa-brands fa-facebook-f fa-align-center"></i></a>
+                <a href=""><i class="fa-brands fa-github fa-align-center"></i></a>
+                <a href=""><i class="fa-brands fa-linkedin-in fa-align-center"></i></a>
+            </div>
+        </div>
+    </div>
+
+</form>
+
+<script src="/js/login.js"></script>
